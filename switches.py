@@ -22,7 +22,7 @@ for chromosome in range(chromosomes):
 
 combined_sum = []
 for n in range(trials):
-    summation = [np.sum(data[trial, :])]  # sums every chromosome's n'th trial
+    summation = [np.sum(data[n, :])]  # sums the n'th trial across all chromosomes
     combined_sum.append(summation)
 
 # writing to text file:
